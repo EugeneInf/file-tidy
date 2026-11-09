@@ -50,3 +50,4 @@ file-tidy/
 - `pathlib.Path` 比 `os.path` 好用：`Path("a") / "b"` 就是拼路径
 - `argparse` 十分钟就能做出像样的命令行参数
 - `--dry-run` 是处理"会删/会改文件"的操作时的好习惯：先演练，再执行
+
