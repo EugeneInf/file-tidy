@@ -1,4 +1,4 @@
-# file-tidy
+﻿# file-tidy
 
 把乱糟糟的下载文件夹按扩展名整理成子文件夹。命令行跑一下，一秒变整齐。
 
@@ -51,21 +51,3 @@ file-tidy/
 - `argparse` 十分钟就能做出像样的命令行参数
 - `--dry-run` 是处理"会删/会改文件"的操作时的好习惯：先演练，再执行
 
-# web2md
-
-把网页正文保存成干净的 markdown 文件。
-
-## 安装
-python -m pip install requests beautifulsoup4 markdownify
-
-## 用法
-python main.py <网址> [-o 输出文件名.md]
-
-## 工作原理
-1. fetch.py 发 HTTP GET 下载 HTML
-2. extract.py 删掉导航/脚本，猜出正文，转成 markdown
-3. main.py 串起来，写文件
-
-## 已知限制
-- 抓不了 JS 渲染的页面
-- 首页/列表页没有正文
